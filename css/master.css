@@ -327,16 +327,81 @@ span {
    text-decoration: none;
  }
 
+/* End information */
+
+/* start borad */
+.board {
+    padding:50px 0 ;
+    position: relative;
+
+}
+.board h3 {
+    text-align: right !important;
+    position: relative;
+    font-weight: 630;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+.board .container h3::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 70px;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.board .container .col-lg-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board .container .board-info {
+    padding: 20px 0;
+}
+.board .container .board-info img {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 20px;
+}
+.board .container .board-info h5 {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    color: var(--head-color);
+    font-weight: bold;
+}
+.board .container .board-info h5::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.board .container .board-info p {
+    text-align: center;
+    color: var(--main-color);
+
+}
+/* End borad */
+
 /* Start clints */
 .clints {
-    padding: 50px 0;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
 }
 .clints .container h3 {
     text-align: right !important;
     position: relative;
-    font-weight: 650;
+    font-weight: 630;
     font-size: 27px;
     margin-bottom: 25px;
 }
@@ -361,9 +426,12 @@ span {
     height: 75px;
     padding: 10px;
     margin-bottom: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+    transition: all 0.3s ease;
 }
-
+.clints .row .cil img:hover {
+    box-shadow: rgb(153, 160, 167) 0px 8px 10px;
+}
 
 /* End clints */
 
@@ -450,7 +518,7 @@ footer hr {
     cursor: pointer;
     transition: all 0.3s ease;
     opacity: 0;
-    z-index: 10;
+    z-index: 50;
 }
 .up.show {
     opacity: 100%;
