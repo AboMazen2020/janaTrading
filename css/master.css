@@ -236,7 +236,7 @@ span {
 }
 .news-bar .animation-news {
     color: var(--head-color);
-    font-weight: 700;
+    font-weight: 650;
     line-height: 1.9;  
     display: inline-block;
     cursor: default;
@@ -366,6 +366,10 @@ span {
     height: 200px;
     border-radius: 50%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 20px;
+    transition: all 0.6s ease;
+}
+.board .container .board-info img:hover {
+    border: 5px solid #B06AB3;
 }
 .board .container .board-info h5 {
     position: relative;
@@ -388,6 +392,7 @@ span {
 .board .container .board-info p {
     text-align: center;
     color: var(--main-color);
+    font-weight: 600;
 
 }
 /* End borad */
@@ -426,7 +431,8 @@ span {
     height: 75px;
     padding: 10px;
     margin-bottom: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 8px 8px 20px;
     transition: all 0.3s ease;
 }
 .clints .row .cil img:hover {
@@ -518,7 +524,7 @@ footer hr {
     cursor: pointer;
     transition: all 0.3s ease;
     opacity: 0;
-    z-index: 50;
+    z-index: 100;
 }
 .up.show {
     opacity: 100%;

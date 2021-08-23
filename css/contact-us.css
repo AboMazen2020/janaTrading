@@ -6,6 +6,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Cairo', sans-serif;
     position: relative;
@@ -206,65 +207,13 @@ span {
 
 /* End Navbar */
 
-/* Start news-bar */
-.news-bar {
-    background-color: var(--main-color);
-    height: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.news-bar::after {
-    position: absolute;
-    content: "آخر الأخبار";
-    top: 0;
-    right: 0px;
-    width: 150px;
-    height: 100%;
-    background-color: var(--head-color);
-    text-align: center;
-    color: var(--main-color);
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.9;
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.news-bar .animation-news {
-    color: var(--head-color);
-    font-weight: 700;
-    line-height: 1.9;  
-    display: inline-block;
-    cursor: default;
-    margin-right: 50px;
-    animation: animation-bar 20s linear infinite;
-    -moz-animation: animation-bar 20s linear infinite;
-    -webkit-animation: animation-bar 20s linear infinite;
-    -o-animation: animation-bar 20s linear infinite;
-}
-.news-bar:hover .animation-news {
-    animation-play-state: paused;
-}
-@keyframes animation-bar {
-    from {
-        transform: translateX(-900px);
-    }
-    to {
-        transform: translateX(1400px);
-    }
-}
-.news-bar .animation-news img {
-    width: 20px;
-}
-    
-/* End news-bar */
-
-
 /* Start contact */
 .contact-card {
     padding-top: 50px;
     padding-bottom: 30px;
 }
 .contact-card .card  {
+    position: relative;
     text-align: center;
     padding: 20px 0;
     border-radius: 10px;
@@ -275,42 +224,58 @@ span {
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid var(--head-color);
+
 }
+
 @media (max-width: 767px) {
     .contact-card .card {
         flex-basis: 50%;
     }
 }
-.contact-card .card:hover  {
-    color: white;
+.contact-card .card::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: var(--head-color);
+    border-radius: 10px;
+    transform: scale(0);
+    transition: all 0.7s ease;
+}
+.contact-card .card:hover::after
+{
+    transform: scale(1);
 
 }
+
 .contact-card .container img {
    max-width: 200px;
     max-height: 300px;
     overflow: hidden;
+    
 }
-.contact-card .card:hover .fa  {
-    background-color: var(--head-color);
 
-
-}
 .contact-card .card .fa, .far {
     font-size: 28px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     line-height: 2;
-    background-color: white;
     color: #fca311;
+    z-index: 3;
 }
 .contact-card .card h5 {
     font-size: 20px;
     margin-top: 10px;
+    color: rgb(145, 145, 145);
+    z-index: 3;
 }
 .contact-card .card p {
     font-size: 20px;
+    color: rgb(145, 145, 145);
+    z-index: 3;
 }
 /* End contact */
 

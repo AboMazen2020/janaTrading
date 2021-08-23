@@ -311,6 +311,10 @@ hr {
     margin-bottom: 20px;
 
 }
+.about .container .our-mission p {
+    padding: 0 20px;
+    font-weight: bold;
+}
 .about .container .goals {
     padding: 50px 0;
 }

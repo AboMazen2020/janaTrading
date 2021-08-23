@@ -248,7 +248,7 @@ span {
     text-align: justify;
     color: var(--head-color);
     line-height: 1.9;
-    font-weight: bold;
+    font-weight: 600;
 }
 .information .contact {
     text-align: right;
