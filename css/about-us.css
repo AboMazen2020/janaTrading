@@ -1,14 +1,17 @@
-
+hr {
+    background-color: var(--head-color);
+    height: 3px;
+}
 /* Start about-us */
 .about {
     padding: 50px 20px;
     
 }
 .about .container {
-    background-color: white;
+    background-color: #edf1fa;
     text-align: center;
-    background-image: url(../image/Background_Pattern.png);
-
+    /* background-image: url(../image/Background_Pattern.png); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .about .container .row {
     padding: 30px 0;
@@ -43,6 +46,7 @@
 .about .container .row .info p {
     text-align: justify;
     line-height: 1.9;
+    letter-spacing: 1.5;
 }
 .about .container .row .info h4,
 .about .container .row .info span {
@@ -62,6 +66,7 @@
     width: 350px;
     margin: 30px 0;
     position: relative;
+    box-shadow: var(--box-shadow);
 }
 .about .container .vision  {
     padding: 50px 0;

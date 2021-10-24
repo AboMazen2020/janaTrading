@@ -16,8 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid var(--head-color);
-
+    border-top: 4px solid var(--main-color);
+    border-bottom: 4px solid var(--head-color);
 }
 
 @media (max-width: 767px) {
