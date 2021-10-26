@@ -17,7 +17,7 @@ body {
 }
 body::-webkit-scrollbar {
     width: 15px;
-    height: 60px;
+    height: 100px;
 }
 /* change scroall bar */
 
