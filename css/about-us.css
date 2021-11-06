@@ -17,9 +17,10 @@ hr {
     padding: 30px 0;
 }
 .about .container .row .gm {
-    width: 200px;
+    width: 205px;
     height: 250px;
     border: 15px solid var(--head-color);
+    border-radius: 4px;
 }
 .about .container .row .info {
     text-align: right;

@@ -43,13 +43,23 @@
 
 }
 
-.contact-card .container img {
-   max-width: 200px;
-    max-height: 300px;
-    overflow: hidden;
-    
+.contact-card .container .heading img {
+    margin: 30px 0;
+   width: 200px;
+    height: 300px;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+    animation: up-dwon 2s linear  infinite;
 }
 
+@keyframes up-dwon {
+    0%, 20%, 80% {
+        transform: translateY(0);
+    }
+    40%, 60% {
+        transform: translateY(-10px);
+    }
+}
 .contact-card .card .fa, .far {
     font-size: 28px;
     width: 40px;
@@ -100,7 +110,7 @@
     margin-bottom: 30px;
 }
 .location iframe {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     height: 100%;
 }
 .location h3 {
