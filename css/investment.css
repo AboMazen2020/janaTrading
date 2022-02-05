@@ -1,0 +1,104 @@
+hr {
+    background-color: var(--head-color);
+    height: 3px;
+}
+
+.heading {
+    background-image: url(../image/investments/background.jbg.png);
+    background-size: cover;
+}
+/* Start invest */
+.invest {
+    padding: 50px 20px;
+    
+}
+
+.invest .container {
+    background-color: #edf1fa;
+    text-align: center;
+    /* background-image: url(../image/Background_Pattern.png); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.invest .container .row {
+    padding: 30px 0;
+}
+
+.invest .container .row .info {
+    text-align: right;
+}
+.invest .container .row .info h3 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    position: relative;
+    width: fit-content;
+}
+.invest .container .row .info h3::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 50%;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 7px;
+}
+
+.invest .container .row .info p {
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: 1.5;
+}
+
+
+
+/* End invest */
+
+/* Start contact-us */
+.contact-us {
+    padding: 20px 0;
+    margin-right: 20px;
+}
+.contact-us   h3 {
+    text-align: right !important;
+    position: relative;
+    font-weight: 650;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.contact-us  h3::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.contact-us  .contact {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: right;
+    margin: 20px 0;
+}
+.contact-us  .contact li {
+    background-color: var(--back-color);
+    margin-bottom: 10px;
+    width: 350px;
+    height: 50px;
+    line-height: 3;
+    border: 1px solid dodgerblue;
+}
+.contact-us  .contact li .fas {
+    padding: 10px;
+    width: 40px;
+    color: dodgerblue;
+    font-size: 19px;
+    margin-left: 15px;
+    border-left: 2px solid #666;
+}
+
+/* End contact-us */
