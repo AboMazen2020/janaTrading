@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 0.3s linear;
+    
+}
+::selection {
+    user-select: none;
 }
 html {
     scroll-behavior: smooth;
@@ -66,6 +70,7 @@ span {
     color: var(--head-color);
     font-weight: 700;
     padding: 10px;
+    font-size: 24px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -141,7 +146,7 @@ span {
     position: relative;
     color: var(--head-color);
     font-weight: 650;
-    font-size: 17px;
+    font-size: 16px;
     margin-left: 10px;
 }
 
@@ -177,7 +182,7 @@ span {
     color: var(--main-color);
     padding: 10px;
     font-weight: 500;
-    border-bottom: 1px solid rgba(238, 238, 238, 0.555);
+    border-bottom: 1px solid rgba(170, 170, 170, 0.555);
 }
 .navbar .dropdown-menu .dropdown-item:hover {
     color: var(--head-color);
@@ -223,6 +228,7 @@ span {
     height: 30px;
     position: relative;
     overflow: hidden;
+    font-size: 14px;
 }
 .news-bar::after {
     position: absolute;
@@ -352,7 +358,7 @@ span {
     text-align: right !important;
     position: relative;
     font-weight: 630;
-    font-size: 27px;
+    font-size: 22px;
     margin-bottom: 25px;
 }
 .board .container h3::before {
