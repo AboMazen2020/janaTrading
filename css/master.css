@@ -5,9 +5,7 @@
     transition: all 0.3s linear;
     
 }
-::selection {
-    user-select: none;
-}
+
 html {
     scroll-behavior: smooth;
     transition: all 0.3s linear;
@@ -580,6 +578,7 @@ span {
     color: white;
     font-weight: 600;
     background-color: #4568dc;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
     .swiper-slide img {
         display: block;
