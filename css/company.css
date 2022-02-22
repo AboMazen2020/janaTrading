@@ -1,15 +1,45 @@
 * {
     transition: all 0.3s linear;
 }
-
-/* Start information */
-.information {
-    padding: 50px 0;
+/* Start head */
+.head {
+    position: relative;
+    top: 0;
+    background-image: url(../image/company/close-up-doctor-front-bright-background_53419-4416.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.information .logos {
-    width: 250px;
+.head-factor {
+    position: relative;
+    top: 0;
+    background-image: url(../image/company/factor/head.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .head .logos {
+    width: 300px;
     margin-bottom: 15px;
 }
+.head .h2-head {
+    color: var(--main-color) !important;
+}
+/* End head */
+/* Start information */
+.information {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
 .information  h3 {
     text-align: right !important;
     position: relative;
@@ -29,6 +59,7 @@
 }
 .information .row  {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .information .row .col-lg-2 img {
@@ -36,7 +67,7 @@
     width: 100%;
     padding: 3px;
     margin-bottom: 30px;
-    transition: 0.3s;
+    transition: 0.3s ease;
     border-radius: 5px;
     box-shadow: #777 0px 0px 5px;
 }
