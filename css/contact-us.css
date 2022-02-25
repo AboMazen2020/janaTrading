@@ -184,3 +184,12 @@
    text-decoration: none;
  }
 /* End Location */
+.location iframe {
+    height: 90%;
+}
+
+@media(max-width: 767px) {
+    .location iframe {
+        height: 400px;
+    } 
+}

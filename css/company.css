@@ -68,11 +68,16 @@
     padding: 3px;
     margin-bottom: 30px;
     transition: 0.3s ease;
-    border-radius: 5px;
+    border-radius: 20px 0 20px 0;
     box-shadow: #777 0px 0px 5px;
 }
+@media(max-width: 767px){
+    .information .row .col-lg-2 img {
+        width: 50%;
+    }
+}
 .information .row .col-lg-2 img:hover {
-    transform: scale(0.9);
+    transform: scale(1.4);
 
 }
 
